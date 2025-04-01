@@ -1,5 +1,3 @@
-import PokemonCard from "./components/PokemonCard";
-
 function PokemonCard() {
     return (
       <figure>
@@ -8,3 +6,5 @@ function PokemonCard() {
       </figure>
     );
   }
+
+  export default PokemonCard;
