@@ -1,5 +1,9 @@
 import "../App.css";
 
+interface pokemonProps{
+  name : string;
+  imgSrc : string;
+}
 
 function PokemonCard({pokemon}) {
   return (
