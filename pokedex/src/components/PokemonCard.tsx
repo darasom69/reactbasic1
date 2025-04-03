@@ -1,6 +1,6 @@
 import "../App.css";
 
-interface Pokemon{
+interface pokemon{
   name : string;
   imgSrc : string;
 }

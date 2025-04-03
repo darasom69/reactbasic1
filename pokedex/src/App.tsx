@@ -2,6 +2,7 @@ import { useState } from "react"
 import "./App.css";
 
 import PokemonCard from "./components/PokemonCard";
+import NavBar from "./components/NavBar"
 
 interface Pokemon {
   name: string;
@@ -47,7 +48,10 @@ function App() {
   return (
     <div>
       <nav> {pokemonList.map((pokemon) => (
-        <button type="button" key={pokemon.name}>
+        <button 
+        type="button" 
+        key={pokemon.name}
+        onClick={() =>setPokemonName(pokemon.name)}>
           {pokemon.name}
           </button>
           ))}
@@ -57,4 +61,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;  
