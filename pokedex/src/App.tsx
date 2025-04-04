@@ -1,14 +1,9 @@
-import { useState } from "react";
-import { useEffect } from "react";
+import { useState } from "react"
 import "./App.css";
+import { useEffect } from "react";
 
 import PokemonCard from "./components/PokemonCard";
 import NavBar from "./components/NavBar";
-
-interface Pokemon {
-  name: string;
-  imgSrc: string;
-}
 
 const pokemonList= [
   {
@@ -38,12 +33,10 @@ const pokemonList= [
 
 
 function App() {
-  useEffect(
-    () =>  {
-    alert("Hello Pokémon trainer :)")
-    }, 
-    []);
-    
+  useEffect(() => {
+    alert("hello pokemon trainer :)");
+  }, []);
+
   const [pokemonName, setPokemonName] = useState("bulbasaur"); 
 
   const pokemon = pokemonList.find((pokemon) => pokemon.name === pokemonName);
@@ -60,4 +53,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;  
